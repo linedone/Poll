@@ -1,7 +1,7 @@
 package com.ust.poll;
 
 
-//test
+//testing
 
 import android.app.Activity;
 import android.content.Intent;
