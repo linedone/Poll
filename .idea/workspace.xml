@@ -11,37 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76d407b1-8ad1-407c-9396-823538d62271" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/libs/jsoup-1.8.3.jar" />
-      <change type="DELETED" beforePath="C:\Users\Ken\Desktop\Poll\.idea\libraries\Parse_1_10_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ken\Desktop\Poll\.idea\libraries\androidbootstrap_2_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ken\Desktop\Poll\.idea\libraries\appcompat_v7_23_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ken\Desktop\Poll\.idea\libraries\bolts_android_1_2_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ken\Desktop\Poll\.idea\libraries\butterknife_7_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ken\Desktop\Poll\.idea\libraries\support_annotations_23_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ken\Desktop\Poll\.idea\libraries\support_v4_23_0_1.xml" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Ken\Desktop\Poll\app\src\main\java\com\ust\poll\LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ust/poll/activity/LoginActivity.java" />
-      <change type="MOVED" beforePath="C:\Users\Ken\Desktop\Poll\app\src\main\java\com\ust\poll\NavigationDrawerFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ust/poll/fragment/NavigationDrawerFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ust/poll/ui/fragment/ActivePollFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ust/poll/ui/fragment/ActivePollFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ust/poll/ui/fragment/FriendListFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ust/poll/ui/fragment/FriendListFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ust/poll/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ust/poll/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ust/poll/ui/fragment/MainFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ust/poll/ui/fragment/MainFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ust/poll/ui/fragment/NewPollFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ust/poll/ui/fragment/NewPollFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ust/poll/PollApp.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ust/poll/PollApp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ust/poll/ui/fragment/PollResultFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ust/poll/ui/fragment/PollResultFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ust/poll/ui/adaptor/UserAdaptor.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ust/poll/ui/adaptor/UserAdaptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ust/poll/util/Util.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ust/poll/util/Util.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_navigation_drawer.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_navigation_drawer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jsoup_1_8_3.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Poll.iws" />
@@ -147,7 +117,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="38" column="67" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="67" />
-              <folding />
+              <folding>
+                <element signature="e#2048#2758#0" expanded="true" />
+                <element signature="e#2757#2758#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -2188,7 +2161,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="42f71c541a51af53" />
@@ -2519,7 +2492,13 @@
       <option name="project" value="LOCAL" />
       <updated>1444930233115</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="test">
+      <created>1445176870879</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1445176870879</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2638,7 +2617,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#2048#2758#0" expanded="true" />
+            <element signature="e#2757#2758#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2683,6 +2665,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2834,6 +2817,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2841,6 +2825,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2848,6 +2833,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2973,7 +2959,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="38" column="67" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="67" />
-          <folding />
+          <folding>
+            <element signature="e#2048#2758#0" expanded="true" />
+            <element signature="e#2757#2758#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
