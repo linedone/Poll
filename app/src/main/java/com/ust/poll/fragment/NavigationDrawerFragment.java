@@ -1,4 +1,4 @@
-package com.ust.poll;
+package com.ust.poll.fragment;
 
 import android.support.v7.app.AppCompatActivity;
 import android.app.Activity;

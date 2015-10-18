@@ -6,12 +6,12 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import com.ust.poll.LoginActivity;
+import com.ust.poll.activity.LoginActivity;
 import com.ust.poll.MainActivity;
 import com.linedone.poll.R;
 
 /**
- * Created by CSH529 on 10/7/2015.
+ * Created by Ken on 10/7/2015.
  */
 public class MainFragment extends MainActivity.PlaceholderFragment {
     @Override

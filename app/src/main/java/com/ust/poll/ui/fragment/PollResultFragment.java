@@ -9,7 +9,7 @@ import com.ust.poll.MainActivity;
 import com.linedone.poll.R;
 
 /**
- * Created by CSH529 on 10/7/2015.
+ * Created by Ken on 10/7/2015.
  */
 public class PollResultFragment extends MainActivity.PlaceholderFragment {
     @Override

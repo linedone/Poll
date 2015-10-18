@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
 
 import com.linedone.poll.R;
+import com.ust.poll.fragment.NavigationDrawerFragment;
 import com.ust.poll.ui.fragment.ActivePollFragment;
 import com.ust.poll.ui.fragment.FriendListFragment;
 import com.ust.poll.ui.fragment.MainFragment;

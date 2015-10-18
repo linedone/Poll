@@ -9,6 +9,41 @@
         <dex dex="C:\Users\Ken\Desktop\Poll\app\build\intermediates\pre-dexed\debug\classes-a91e8e7b8051225c98ae3fc387a6ca481cc14154.jar" />
     </item>
     <item
+        jar="C:\Users\Ken\Desktop\Poll\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="C:\Users\Ken\Desktop\Poll\app\build\intermediates\pre-dexed\debug\classes-98c058b470bcd33da20bb336266515c8bcf8d74e.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ken\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\7.0.1\d5d13ea991eab0252e3710e5df3d6a9d4b21d461\butterknife-7.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="C:\Users\Ken\Desktop\Poll\app\build\intermediates\pre-dexed\debug\butterknife-7.0.1-97b08c298d7546ac1ed41347c5c5b1617354945b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ken\Desktop\Poll\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="C:\Users\Ken\Desktop\Poll\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1-d70def721422c7c24c3d982b68a0b743ead5c8db.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ken\Desktop\Poll\app\libs\jsoup-1.8.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3a86e137575e4a45f5a9eec407f8135512e823a2">
+        <dex dex="C:\Users\Ken\Desktop\Poll\app\build\intermediates\pre-dexed\debug\jsoup-1.8.3-dd492062a67e7339e07255f81f2b7f52ec3dfa24.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ken\AppData\Local\Android\sdk1\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="C:\Users\Ken\Desktop\Poll\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1-4771165b14511c814aa84deed7e33206207d3ff7.jar" />
+    </item>
+    <item
         jar="C:\Users\Ken\Desktop\Poll\app\libs\Parse-1.10.2.jar"
         jumboMode="false"
         revision="23.0.1"
@@ -28,34 +63,6 @@
         revision="23.0.1"
         sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
         <dex dex="C:\Users\Ken\Desktop\Poll\app\build\intermediates\pre-dexed\debug\classes-b9aaed26546afc0ffa5669ce89a18bea1c4f6cd6.jar" />
-    </item>
-    <item
-        jar="C:\Users\Ken\AppData\Local\Android\sdk1\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
-        <dex dex="C:\Users\Ken\Desktop\Poll\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1-4771165b14511c814aa84deed7e33206207d3ff7.jar" />
-    </item>
-    <item
-        jar="C:\Users\Ken\Desktop\Poll\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="C:\Users\Ken\Desktop\Poll\app\build\intermediates\pre-dexed\debug\classes-98c058b470bcd33da20bb336266515c8bcf8d74e.jar" />
-    </item>
-    <item
-        jar="C:\Users\Ken\Desktop\Poll\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="C:\Users\Ken\Desktop\Poll\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1-d70def721422c7c24c3d982b68a0b743ead5c8db.jar" />
-    </item>
-    <item
-        jar="C:\Users\Ken\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\7.0.1\d5d13ea991eab0252e3710e5df3d6a9d4b21d461\butterknife-7.0.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
-        <dex dex="C:\Users\Ken\Desktop\Poll\app\build\intermediates\pre-dexed\debug\butterknife-7.0.1-97b08c298d7546ac1ed41347c5c5b1617354945b.jar" />
     </item>
 
 </items>

@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.ust.poll.LoginActivity;
+import com.ust.poll.activity.LoginActivity;
 import com.ust.poll.MainActivity;
 import com.linedone.poll.R;
 import com.ust.poll.ui.dialog.DialogHelper;
@@ -27,7 +27,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
- * Created by CSH529 on 10/7/2015.
+ * Created by Ken on 10/7/2015.
  */
 public class FriendListFragment extends MainActivity.PlaceholderFragment {
     @Bind(R.id.listView)

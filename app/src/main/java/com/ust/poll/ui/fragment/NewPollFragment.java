@@ -16,7 +16,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
- * Created by CSH529 on 10/7/2015.
+ * Created by Ken on 10/7/2015.
  */
 public class NewPollFragment extends MainActivity.PlaceholderFragment {
     @Bind(R.id.txt_msg)

@@ -9,7 +9,7 @@ import com.parse.ParseInstallation;
 import com.parse.ParsePush;
 
 /**
- * Created by CSH529 on 10/7/2015.
+ * Created by Ken on 10/7/2015.
  */
 public class PollApp extends Application{
     @Override
