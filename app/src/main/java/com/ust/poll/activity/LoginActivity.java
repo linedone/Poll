@@ -8,20 +8,19 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.webkit.WebView;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.beardedhen.androidbootstrap.BootstrapEditText;
 import com.linedone.poll.R;
 import com.ust.poll.MainActivity;
+import com.ust.poll.model.smsData;
 import com.ust.poll.ui.dialog.DialogHelper;
-import com.parse.LogInCallback;
 import com.parse.ParseAnalytics;
-import com.parse.ParseException;
 import com.parse.ParseUser;
-import com.parse.SignUpCallback;
 
 import org.jsoup.Jsoup;
-import org.jsoup.nodes.DataNode;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -29,8 +28,6 @@ import org.jsoup.select.Elements;
 import java.io.IOException;
 
 import butterknife.Bind;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 
 public class LoginActivity extends Activity {
@@ -38,22 +35,27 @@ public class LoginActivity extends Activity {
 
     private static final String TAG = "LoginActivity";
     private static final String url = "http://www.afreesms.com/worldwide/hong-kong";
+    smsData newData = new smsData();
 
-    @Bind(R.id.txt_username)
-    BootstrapEditText txt_username;
-    @Bind(R.id.txt_password)
-    BootstrapEditText txt_password;
+    @Bind(R.id.txt_phone_no)
+    BootstrapEditText txt_phone_no;
+    @Bind(R.id.txt_captcha_code)
+    BootstrapEditText txt_captcha_code;
     ParseUser user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-        ButterKnife.bind(this);
-        fnInitParse();
+        setContentView(R.layout.sms_reg);
+
+        //ButterKnife.bind(this);
+        //fnInitParse();
 
         new readsmsForm().execute();
+
+
+
     }
 
     /*
@@ -70,9 +72,23 @@ public class LoginActivity extends Activity {
 
     }
 
+
+    public void fnReset(View view) {
+
+        txt_phone_no.setText("");
+        txt_captcha_code.setText("");
+    }
+
+    public void fnSubmit(View view) {
+
+        new sendsmsForm().execute();
+    }
+
     /*
     * Buttons handlers
     * */
+
+    /*
     @OnClick(R.id.btn_login)
     public void fnLogin(View view) {
         String usernametxt = txt_username.getText().toString();
@@ -137,7 +153,7 @@ public class LoginActivity extends Activity {
             });
         }
     }
-
+*/
 
     private void fnCheckUser() {
         if (user != null && user.getObjectId() != null) {
@@ -198,8 +214,9 @@ public class LoginActivity extends Activity {
                 for (Element el : allInput) {
                     // If alt is empty or null, add one to counter
                     if(el.attr("value").length() >20) {
-
-                        Log.d(TAG, "-"+el.attr("value"));
+                        newData.setformValue(el.attr("value"));
+                        Log.d(TAG, "-" + el.attr("value"));
+                        newData.setformName(el.attr("name"));
                         Log.d(TAG, "-"+el.attr("name"));
                     }
 
@@ -233,6 +250,17 @@ public class LoginActivity extends Activity {
             //TextView txttitle = (TextView) findViewById(R.id.titletxt);
             //txttitle.setText(title);
             //mProgressDialog.dismiss();
+
+            WebView contentWebView = (WebView) findViewById(R.id.image_captcha);
+            contentWebView.getSettings().setJavaScriptEnabled(true);
+
+
+
+
+            //contentWebView.loadUrl("javascript: ord=Math.random();  ord=ord*10000000000000000000; document.write('<img id=\"captcha\" src=\"http://www.afreesms.com/image.php?o='+ord+'\" align=\"top\" />')");
+            //contentWebView.loadUrl("<script>ord=Math.random(); ord=ord*10000000000000000000; document.write('<img id=\"captcha\" src=\"http://www.afreesms.com/image.php?o='+ ord +'\" align=\"top\" />');</script>");
+            contentWebView.loadUrl("javascript:document.write('<img id=\"captcha\" src=\"http://www.afreesms.com/image.php?o='+Math.random()*10000000000000000000+'\" align=\"top\" />')");
+            //Log.d(TAG, "captcha URL" + "javascript: ord=Math.random();  ord=ord*10000000000000000000; document.write('<img id=\"captcha\" src=\"http://www.afreesms.com/image.php?o='+ord+'\" align=\"top\" />')");
         }
     }
 
@@ -250,21 +278,50 @@ public class LoginActivity extends Activity {
         protected void onPreExecute() {
             super.onPreExecute();
 
+            //Log.d(TAG, "b4 die");
+
+            final EditText phone_no = (EditText) findViewById (R.id.txt_phone_no);
+            String tmpPhone = phone_no.getText().toString();
+            final EditText captcha = (EditText) findViewById (R.id.txt_captcha_code);
+            String tmpCaptcha = captcha.getText().toString();
+
+
+
+            newData.setPhoneno(tmpPhone);
+            newData.setcaptcha(tmpCaptcha);
+
+            Log.d(TAG, "phone" + newData.getphoneNo());
+            Log.d(TAG, "captcha" + newData.getcaptcha());
+
+
+
+           // Log.d(TAG, "after die");
         }
 
         @Override
         protected Void doInBackground(Void... params) {
             try {
 
+
                 Document document = Jsoup.connect("http://www.afreesms.com/worldwide/hong-kong")
                         .data("IL_IN_TAG", "1")
                         .data("countrycode", "852")
-                        .data("smsto", "") //mobile phone no.
-                        .data("msgLen", "") //message length
-                        .data("imgcode", "") //captcha
-                        .data("", "") //two hidden long value (name and value)
-
+                        //.data("smsto", "" +  newData.getphoneNo()) //mobile phone no.
+                        .data("smsto", "54990678") //mobile phone no.
+                        .data("message", "12345678910") //message length
+                        .data("msgLen", "149") //message length
+                        .data("imgcode", "364156") //captcha
+                        //.data("imgcode", "" + newData.getcaptcha()) //captcha
+                        //.data("" + newData.getformName(), "" + newData.getformValue()) //two hidden long value (name and value)
+                        .data("dab55db11b9916a5e86521ecb4dc01d95204bd", "8ae71be147d842efeb662fb8eb9c5d85135e") //two hidden long value (name and value)
+                        .data("IL_IN_TAG", "1")
                         .post();
+
+                //Log.d(TAG, "temp phone "+ newData.getphoneNo());
+                //Log.d(TAG, "tmp captcha "+ newData.getcaptcha());
+                //Log.d(TAG, "tmp formName "+ newData.getformName());
+                //Log.d(TAG, "tmp formValue "+ newData.getformValue());
+
 
 
             } catch (IOException e) {

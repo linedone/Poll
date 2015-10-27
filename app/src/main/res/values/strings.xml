@@ -7,6 +7,10 @@
     <string name="parse_client_key">Enr505CuI7ySCDXh4uM6q7WgfM5mohN6ZTDWgYJ6</string>
 
     <!-- Logn in/Sign up Activity -->
+    <string name="text_phone_no">Your Phone no</string>
+    <string name="text_captcha">Captcha Code</string>
+    <string name="text_reset">Reset</string>
+    <string name="text_submit">Submit</string>
     <string name="text_login_name">Login Name</string>
     <string name="text_password">Password</string>
     <string name="text_old_password">Old Password</string>
