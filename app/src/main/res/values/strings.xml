@@ -13,6 +13,7 @@
     <string name="text_submit">Submit</string>
     <string name="text_login_name">Login Name</string>
     <string name="text_password">Password</string>
+
     <string name="text_old_password">Old Password</string>
     <string name="text_new_password">New Password</string>
     <string name="text_btn_login">Login</string>
@@ -26,6 +27,8 @@
     <string name="text_updated_by">Updated By</string>
     <string name="text_desc">Description</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="title_vote">Vote</string>
+    <string name="text_poll_name">Poll Title</string>
 
     <!-- Titles used in Drawer -->
     <string name="title_section1">Active Poll</string>

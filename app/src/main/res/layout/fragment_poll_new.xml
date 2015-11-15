@@ -21,13 +21,14 @@
         android:text="NEW POLL" />
 
     <com.beardedhen.androidbootstrap.BootstrapEditText
-        android:id="@+id/txt_msg"
+        android:id="@+id/txt_title"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:layout_marginTop="25dp"
         android:textSize="@dimen/bootstrap_edit_text_default_font_size"
         android:gravity="center"
+        android:hint="@string/text_poll_name"
         android:layout_below="@+id/Title" />
 
 
@@ -36,9 +37,9 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txt_msg"
-        android:layout_alignLeft="@+id/txt_msg"
-        android:layout_alignStart="@+id/txt_msg">
+        android:layout_below="@+id/txt_title"
+        android:layout_alignLeft="@+id/txt_title"
+        android:layout_alignStart="@+id/txt_title">
 
         <com.beardedhen.androidbootstrap.BootstrapButtonGroup
             android:id="@+id/button_group_option"
@@ -47,30 +48,38 @@
             android:layout_margin="10dp"
             android:layout_marginTop="25dp"
             android:orientation="vertical"
-            app:bootstrapBrand="primary"
             app:bootstrapSize="lg"
             android:gravity="center"
+            app:bootstrapBrand="success"
+            app:roundedCorners="true"
+            app:showOutline="true"
             android:layout_below="@+id/Title">
 
             <com.beardedhen.androidbootstrap.BootstrapButton
+                android:id="@+id/option1"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:onClick="fnOption"
                 android:text="OPTION 1" />
 
             <com.beardedhen.androidbootstrap.BootstrapButton
-                android:layout_width="fill_parent"
+                android:id="@+id/option2" android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:onClick="fnOption"
                 android:text="OPTION 2" />
 
             <com.beardedhen.androidbootstrap.BootstrapButton
-                android:layout_width="fill_parent"
+                android:id="@+id/option3" android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:onClick="fnOption"
                 android:text="OPTION 3" />
 
             <com.beardedhen.androidbootstrap.BootstrapButton
-                android:layout_width="fill_parent"
+                android:id="@+id/option4" android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:onClick="fnOption"
                 android:text="OPTION 4" />
+
         </com.beardedhen.androidbootstrap.BootstrapButtonGroup>
 
     </LinearLayout>

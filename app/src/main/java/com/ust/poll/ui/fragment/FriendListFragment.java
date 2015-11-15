@@ -1,5 +1,6 @@
 package com.ust.poll.ui.fragment;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -62,6 +63,7 @@ public class FriendListFragment extends MainActivity.PlaceholderFragment {
     public void onActivityCreated(final Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         final ArrayList<String> list = new ArrayList<String>();
+        final Context ctx = this.getActivity();
 
         ParseQuery<ParseUser> query = ParseUser.getQuery();
         //query.whereEqualTo("gender", "female");
@@ -71,7 +73,7 @@ public class FriendListFragment extends MainActivity.PlaceholderFragment {
                     for (ParseUser p : objects) {
                         list.add(p.getUsername());
                     }
-                    ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(),android.R.layout.simple_list_item_1, android.R.id.text1, list);
+                    ArrayAdapter<String> adapter = new ArrayAdapter<String>(ctx,android.R.layout.simple_list_item_1, android.R.id.text1, list);
                     listView.setAdapter(adapter);
                 } else {
                     DialogHelper.getOkAlertDialog(getActivity(),

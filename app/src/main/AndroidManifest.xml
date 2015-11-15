@@ -11,7 +11,14 @@
     <permission android:protectionLevel="signature"
         android:name="com.linedone.poll.permission.C2D_MESSAGE" />
     <uses-permission android:name="com.linedone.poll.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
 
     <application
         android:name="com.ust.poll.PollApp"
@@ -35,10 +42,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name="com.ust.poll.MainActivity"
             android:label="@string/title_activity_main" >
         </activity>
+
+
+        <!-- SMS Receiver -->
+        <receiver android:name="com.ust.poll.sms.SMSMonitor" android:exported="true" >
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
 
         <!-- Push Policy & Receiver -->
         <service android:name="com.parse.PushService" />
@@ -58,6 +74,8 @@
                 <category android:name="com.linedone.poll" />
             </intent-filter>
         </receiver>
+
+
     </application>
 
 </manifest>
