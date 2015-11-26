@@ -1,26 +1,27 @@
 package com.ust.poll;
 
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.app.ActionBar;
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.os.Bundle;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.support.v4.widget.DrawerLayout;
 
 import com.linedone.poll.R;
+import com.parse.ParseUser;
 import com.ust.poll.fragment.NavigationDrawerFragment;
 import com.ust.poll.ui.fragment.ActivePollFragment;
 import com.ust.poll.ui.fragment.FriendListFragment;
 import com.ust.poll.ui.fragment.MainFragment;
 import com.ust.poll.ui.fragment.NewPollFragment;
+import com.ust.poll.ui.fragment.NewPollFragment_DateTime;
 import com.ust.poll.ui.fragment.PollResultFragment;
-import com.parse.ParseUser;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
@@ -75,6 +76,9 @@ public class MainActivity extends AppCompatActivity
                 mTitle = getString(R.string.title_section3);
                 break;
             case 4:
+                mTitle = getString(R.string.title_section4);
+                break;
+            case 5:
                 mTitle = getString(R.string.title_section4);
                 break;
         }
@@ -150,10 +154,16 @@ public class MainActivity extends AppCompatActivity
                 case 4:
                     fragment = new NewPollFragment();
                     break;
+                case 5:
+                    fragment = new NewPollFragment_DateTime();
+
+                    break;
                 default:
                     fragment = new MainFragment();
                     break;
             }
+
+
             Bundle args = new Bundle();
             args.putInt(ARG_SECTION_NUMBER, sectionNumber);
             fragment.setArguments(args);
@@ -168,6 +178,10 @@ public class MainActivity extends AppCompatActivity
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
             return rootView;
+
+
+
+
         }
 
         @Override
@@ -176,6 +190,12 @@ public class MainActivity extends AppCompatActivity
             ((MainActivity) activity).onSectionAttached(
                     getArguments().getInt(ARG_SECTION_NUMBER));
         }
+
+
+
     }
+
+
+
 
 }

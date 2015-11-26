@@ -48,14 +48,18 @@ public class NewPollFragment extends MainActivity.PlaceholderFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+
         View rootView = inflater.inflate(R.layout.fragment_poll_new, container, false);
         ButterKnife.bind(this, rootView);
         return rootView;
+
     }
 
     @Override
     public void onActivityCreated(final Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+
     }
 
     @OnClick({ R.id.option1, R.id.option2, R.id.option3, R.id.option4 })
@@ -63,7 +67,7 @@ public class NewPollFragment extends MainActivity.PlaceholderFragment {
         final BootstrapButton btn = (BootstrapButton)view;
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this.getContext());
-        builder.setTitle("Title");
+        builder.setTitle("Option");
 
         // Set up the input
         final EditText input = new EditText(this.getContext());
@@ -86,12 +90,89 @@ public class NewPollFragment extends MainActivity.PlaceholderFragment {
         builder.show();
     }
 
-    @OnClick(R.id.btn_new_poll)
+
+
+
+    @OnClick(R.id.btn_new_poll_next)
     public void fnNewPoll(View view) {
-        DialogHelper.fnShowDialog(this.getContext());
-        fnCreatePoll();
-        //fnSendPushNotification();
+
+
+        //Fragment fragment = new NewPollFragment_DateTime();
+        //FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+       // FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        //fragmentTransaction.replace(R.id.container, fragment);
+       // fragmentTransaction.addToBackStack(null);
+        //fragmentTransaction.commit();
+
+        boolean nextChecking = true;
+
+        if( txt_title.getText().toString().length() == 0 ) {
+            txt_title.setError("Poll title is required!");
+            nextChecking = false;
+        }
+        //Log.d("test", ""+option1.getText());
+
+        int counter = 0;
+        if (option1.getText().toString().equals( "OPTION 1")) {
+            counter++;
+        }
+        if (option2.getText().toString().equals( "OPTION 2")) {
+            counter++;
+        }
+        if (option3.getText().toString().equals( "OPTION 3")) {
+            counter++;
+        }
+        if (option4.getText().toString().equals( "OPTION 4")) {
+            counter++;
+        }
+
+        if(counter >=3){
+            Toast.makeText(NewPollFragment.super.getActivity(), "Option must be more than one!",
+                    Toast.LENGTH_LONG).show();
+            nextChecking = false;
+        }
+
+        if(nextChecking)
+        {
+
+
+            NewPollFragment_DateTime fragment = new NewPollFragment_DateTime();
+            Bundle bundle = new Bundle();
+            bundle.putString("title", txt_title.getText().toString());
+            bundle.putString("option1", option1.getText().toString());
+            bundle.putString("option2", option2.getText().toString());
+            bundle.putString("option3", option3.getText().toString());
+            bundle.putString("option4", option4.getText().toString());
+            fragment.setArguments(bundle);
+            getFragmentManager().beginTransaction().replace(R.id.container, fragment).addToBackStack(null).commit();
+
+            //FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+            //fragmentManager.beginTransaction()
+            //        .replace(R.id.container, MainActivity.PlaceholderFragment.newInstance(5))
+            //        .addToBackStack(null).commit();
+        }
+        // DialogHelper.fnShowDialog(this.getContext());
+        //fnCreatePoll();
+
+
+        //Intent intent = new Intent(getActivity().getBaseContext(),
+        //        MainActivity.class);
+        //intent.putExtra("title", txt_title.getText().toString());
+        //intent.putExtra("option1", option1.getText().toString());
+        //intent.putExtra("option2", option2.getText().toString());
+        //intent.putExtra("option3", option3.getText().toString());
+        //intent.putExtra("option4", option4.getText().toString());
+        //getActivity().startActivity(intent);
+
+
+
+
+
     }
+
+
+
+
 
     private void fnCreatePoll() {
         final Context ctx = this.getContext();
@@ -126,4 +207,5 @@ public class NewPollFragment extends MainActivity.PlaceholderFragment {
 //        push.setExpirationTime(1424841505);
         push.sendInBackground();
     }
+
 }

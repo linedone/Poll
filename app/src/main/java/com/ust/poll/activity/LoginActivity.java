@@ -176,6 +176,7 @@ public class LoginActivity extends Activity {
         } else {
             txt_phone_no.setEnabled(true);
         }
+        txt_phone_no.setText("");
         txt_captcha_code.setText("");
         txt_captcha_code.setVisibility(View.INVISIBLE);
     }

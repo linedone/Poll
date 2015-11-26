@@ -1,6 +1,8 @@
 -- Merging decision tree log ---
 manifest
 ADDED from C:\Users\Ken\Desktop\Poll\app\src\main\AndroidManifest.xml:2:1-81:12
+	xmlns:android
+		ADDED from C:\Users\Ken\Desktop\Poll\app\src\main\AndroidManifest.xml:2:11-69
 	package
 		ADDED from C:\Users\Ken\Desktop\Poll\app\src\main\AndroidManifest.xml:3:5-32
 		INJECTED from C:\Users\Ken\Desktop\Poll\app\src\main\AndroidManifest.xml
@@ -8,11 +10,13 @@ ADDED from C:\Users\Ken\Desktop\Poll\app\src\main\AndroidManifest.xml:2:1-81:12
 	android:versionName
 		INJECTED from C:\Users\Ken\Desktop\Poll\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Ken\Desktop\Poll\app\src\main\AndroidManifest.xml
-	xmlns:android
-		ADDED from C:\Users\Ken\Desktop\Poll\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
 		INJECTED from C:\Users\Ken\Desktop\Poll\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Ken\Desktop\Poll\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.READ_CONTACTS
+ADDED from C:\Users\Ken\Desktop\Poll\app\src\main\AndroidManifest.xml:4:5-72
+	android:name
+		ADDED from C:\Users\Ken\Desktop\Poll\app\src\main\AndroidManifest.xml:4:22-69
 uses-permission#android.permission.INTERNET
 ADDED from C:\Users\Ken\Desktop\Poll\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
