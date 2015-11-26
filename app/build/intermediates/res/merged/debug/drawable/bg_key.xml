@@ -5,4 +5,4 @@
     <item android:state_selected="true"
         android:drawable="@color/pressed_color"/>
     <item android:drawable="@color/default_color" />
-</selector><!-- From: file:/C:/Users/Ken/Desktop/Poll/app/src/main/res/drawable/bg_key.xml -->
+</selector><!-- From: file:/Users/kenma/AndroidStudioProjects/Poll/app/src/main/res/drawable/bg_key.xml -->

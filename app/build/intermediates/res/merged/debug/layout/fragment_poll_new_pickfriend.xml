@@ -78,4 +78,4 @@
         android:layout_alignEnd="@+id/Title" />
 
 </RelativeLayout>
-<!-- From: file:/C:/Users/Ken/Desktop/Poll/app/src/main/res/layout/fragment_poll_new_pickfriend.xml -->
+<!-- From: file:/Users/kenma/AndroidStudioProjects/Poll/app/src/main/res/layout/fragment_poll_new_pickfriend.xml -->

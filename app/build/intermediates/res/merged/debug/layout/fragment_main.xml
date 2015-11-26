@@ -20,4 +20,4 @@
         android:gravity="center"
         android:text="@string/app_desc" />
 </RelativeLayout>
-<!-- From: file:/C:/Users/Ken/Desktop/Poll/app/src/main/res/layout/fragment_main.xml -->
+<!-- From: file:/Users/kenma/AndroidStudioProjects/Poll/app/src/main/res/layout/fragment_main.xml -->

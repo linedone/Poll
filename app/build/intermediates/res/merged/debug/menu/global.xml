@@ -3,4 +3,4 @@
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
 </menu>
-<!-- From: file:/C:/Users/Ken/Desktop/Poll/app/src/main/res/menu/global.xml -->
+<!-- From: file:/Users/kenma/AndroidStudioProjects/Poll/app/src/main/res/menu/global.xml -->
